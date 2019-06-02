@@ -25,6 +25,7 @@ const SEO = () => {
         lang: `en`,
       }}
       title={title}
+      link={[{ rel: `icon`, href: `data:,` }]} // disable favicon for now
       meta={[
         {
           name: `description`,

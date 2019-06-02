@@ -1,9 +1,14 @@
 import React from "react"
+import { config } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons"
 
 import "sanitize.css"
 import "./layout.css"
+
+// See https://github.com/FortAwesome/react-fontawesome/issues/234
+config.autoAddCss = false
 
 const Layout = ({ children }) => (
   <div className="container">
