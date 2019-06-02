@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0 1vh;
+  margin-top: 2vh;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div {
+  max-width: 960px;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+footer > a {
+  margin-right: 2vh;
+}
