@@ -1,9 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
 import Emoji from "../components/emoji"
+import SEO from "../components/seo"
 
 export default () => (
   <Layout>
+    <SEO />
     <h1>Hi, I'm Josh <Emoji symbol="👋"/></h1>
     <h2>I love solving problems and playing games.</h2>
     <p>
