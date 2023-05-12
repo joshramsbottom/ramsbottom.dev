@@ -1,13 +1,28 @@
-const { transform } = require("lightningcss");
+const { bundle } = require("lightningcss");
+const path = require("node:path");
 
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addFilter("cssmin", function (code) {
-    const { code: css } = transform({
-      code: Buffer.from(code),
-      minify: true,
-      sourceMap: false,
-    });
-    return css;
+  eleventyConfig.addTemplateFormats("css");
+
+  eleventyConfig.addExtension("css", {
+    outputFileExtension: "css",
+
+    compile: function (_inputContent, inputPath) {
+      const parsed = path.parse(inputPath);
+      if (parsed.name.startsWith("_")) {
+        return;
+      }
+
+      return () => {
+        const { code } = bundle({
+          filename: inputPath,
+          minify: true,
+          sourceMap: false,
+        });
+
+        return code;
+      };
+    },
   });
 
   return {
