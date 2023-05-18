@@ -1,9 +1,9 @@
 .header {
-	display: flex;
-	justify-content: end;
-	padding-block: var(--space-s-m);
+  display: flex;
+  justify-content: end;
+  padding-block: var(--space-s-m);
 }
 
 .header nav ul {
-	margin: 0;
+  margin: 0;
 }

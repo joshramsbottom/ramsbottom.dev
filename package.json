@@ -1,26 +1,27 @@
 {
-	"name": "ramsbottom.dev",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"prepare": "husky install",
-		"dev": "eleventy --serve",
-		"build": "eleventy"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"husky": "^8.0.3",
-		"lint-staged": "^13.2.2",
-		"prettier": "^2.8.8"
-	},
-	"dependencies": {
-		"@11ty/eleventy": "^2.0.1",
-		"lightningcss": "^1.20.0"
-	},
-	"lint-staged": {
-		"**/*": "prettier --write --ignore-unknown"
-	}
+  "name": "ramsbottom.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.0.6",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "lightningcss": "^1.20.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown --plugin=@shopify/prettier-plugin-liquid"
+  }
 }

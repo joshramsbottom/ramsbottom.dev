@@ -1,0 +1,22 @@
+<header class="header wrapper">
+  <nav>
+    <ul role="list">
+      <li>
+        <a
+          href="/"
+          {%- if page.url == '/' -%}
+            active
+          {%- endif -%}
+          >home</a
+        >
+        <a
+          href="/cv/"
+          {% if page.url == '/cv/' %}
+            active
+          {% endif %}
+          >cv</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
