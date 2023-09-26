@@ -1,0 +1,8 @@
+.prose {
+  max-width: 50rem;
+  line-height: 1.8;
+}
+
+.prose :is(h2 + *, h3 + *, h4 + *) {
+  --flow-space: var(--space-s);
+}

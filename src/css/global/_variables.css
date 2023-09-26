@@ -42,5 +42,6 @@
 }
 
 :root {
-  --font-base: "Work Sans", sans-serif;
+  --font-heading: "Work Sans", -apple-system, system-ui, sans-serif;
+  --font-base: "Poppins", -apple-system, system-ui, sans-serif;
 }

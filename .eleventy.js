@@ -25,7 +25,7 @@ module.exports = (eleventyConfig) => {
     },
   });
 
-  eleventyConfig.addPassthroughCopy("src/public/fonts/");
+  eleventyConfig.addPassthroughCopy("src/public/");
 
   return {
     dir: {

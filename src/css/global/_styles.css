@@ -15,6 +15,13 @@ h3 {
   font-size: var(--step-1);
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
 [role="list"] {
   padding: 0;
 }
@@ -22,4 +29,16 @@ h3 {
 a {
   color: currentColor;
   text-decoration-thickness: 2px;
+}
+
+blockquote,
+dl,
+figcaption,
+li,
+p {
+  max-width: 65ch;
+}
+
+ul {
+  padding-inline-start: 1.5em;
 }

@@ -7,11 +7,18 @@
       {% if title %}{{ title }} | {% endif %}
       ramsbottom.dev
     </title>
+    <link rel="preload" href="/public/fonts/work-sans-v19-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/public/fonts/work-sans-v19-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/public/fonts/poppins-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/public/fonts/poppins-v20-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐏</text></svg>"
     >
     <link rel="stylesheet" href="/css/global.css">
+    {%- for url in stylesheets -%}
+      <link href="{{ url }}" rel="stylesheet">
+    {%- endfor %}
   </head>
   <body class="page">
     {% render 'partials/header.liquid' %}

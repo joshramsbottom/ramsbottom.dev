@@ -1,9 +1,15 @@
 .header {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   padding-block: var(--space-s-m);
+}
+
+.header > a {
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .header nav ul {
   margin: 0;
+  --gutter: var(--space-s-m);
 }
