@@ -1,4 +1,5 @@
 const { bundle } = require("lightningcss");
+const { DateTime } = require("luxon");
 const path = require("node:path");
 
 module.exports = (eleventyConfig) => {
@@ -26,6 +27,10 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addPassthroughCopy("src/public/");
+
+  eleventyConfig.addFilter("readableDate", function (date) {
+    return DateTime.fromJSDate(date).toFormat("d LLLL y");
+  });
 
   return {
     dir: {

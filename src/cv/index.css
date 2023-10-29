@@ -1,3 +1,40 @@
 .last-updated {
   font-size: var(--step--1);
 }
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  .print-only {
+    display: initial;
+  }
+
+  html,
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  :root {
+    font-size: 10px;
+  }
+
+  .wrapper {
+    padding-inline: 0;
+    margin-inline: 0;
+  }
+
+  .region {
+    padding-block: var(--space-s);
+  }
+}

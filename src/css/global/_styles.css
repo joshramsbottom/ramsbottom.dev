@@ -1,6 +1,7 @@
 body {
   font-family: var(--font-base);
   font-size: var(--step-0);
+  color: var(--color-primary);
 }
 
 h1 {

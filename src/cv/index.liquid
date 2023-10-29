@@ -4,6 +4,10 @@ title: Curriculum Vitae
 stylesheets:
  - "/cv/index.css"
 ---
+<header class="print-only">
+  <h1>Joshua Ramsbottom</h1>
+  <a href="mailto:josh@ramsbottom.dev">josh@ramsbottom.dev</a>
+</header>
 <main>
   <section class="wrapper flow prose region">
     <h2>Work</h2>
@@ -25,14 +29,14 @@ stylesheets:
         <ul>
           <li>Led the team that integrated the Capitec Pay API, including recon and settlement for merchants.</li>
           <li>Provided technical oversight and communicated project status with stakeholders.</li>
-          <li>Ran team meetings, including planning sessions and 1-1 check-ins with team members.</li>
+          <li>Ran planning sessions, 1-1 check-ins, and performance reviews with team members.</li>
           <li>Project included updates and refactorings across multiple services as well as one new service.</li>
           <li>Supported integration during go live process.</li>
           <li>Integration handles thousands of payments per day.</li>
         </ul>
         <p>Security</p>
         <ul>
-          <li>Reviewed 3rd party pentest recommendations and scoped project to implement fixes.</li>
+          <li>Reviewed 3rd party pentest findings and scoped project to implement fixes.</li>
         </ul>
         <p>Stitch website</p>
         <ul>
@@ -71,9 +75,8 @@ stylesheets:
         <p>Recon dashboard</p>
         <ul>
           <li>Enterprise recon dashboard that allowed clients to view and action transactions.</li>
-          <li>Created prototype designs and iterated with stakeholders' feedback.</li>
           <li>Designed pages using Figma.</li>
-          <li>Built dashboard into a new section of existing front end using React and Redux.</li>
+          <li>Built into existing front end using React and Redux. Displays thousands of paginated transactions.</li>
         </ul>
         <p>Mentoring</p>
         <ul>
@@ -89,8 +92,7 @@ stylesheets:
         <p><em>February 2017 - September 2019</em></p>
         <ul>
           <li>
-            Added new pages and features to a bespoke client operations front end, written in vanilla HTML, CSS, and
-            Javascript.
+            Added new features to a bespoke client operations front end, written in vanilla HTML, CSS, and Javascript.
           </li>
           <li>
             Implemented a new API for purchasing Lotto tickets including the corresponding vendor integration in Java.
@@ -98,8 +100,6 @@ stylesheets:
           <li>
             Took over development of the client dashboard front end from a contractor, built with React and Redux.
           </li>
-          <li>Joined the Product team, which worked on the company's core products.</li>
-          <li>Built masking framework for message serialisation.</li>
         </ul>
       </li>
       <li>
@@ -145,5 +145,7 @@ stylesheets:
       </li>
     </ul>
   </section>
-  <section class="wrapper prose region last-updated"><p>Last updated on 27 September 2023</p></section>
+  <section class="wrapper prose region last-updated">
+    <p>Last updated on {{ now | readableDate }}</p>
+  </section>
 </main>
