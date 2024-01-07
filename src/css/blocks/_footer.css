@@ -1,5 +1,10 @@
 .footer {
-  display: flex;
-  justify-content: flex-end;
   padding-block: var(--space-s);
+  color: var(--color-primary);
+}
+
+.footer > ul {
+  margin: 0;
+  --cluster-horizontal-alignment: flex-end;
+  --gutter: var(--space-xs);
 }
