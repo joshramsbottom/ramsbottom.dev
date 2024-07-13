@@ -27,6 +27,7 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addPassthroughCopy("src/public/");
+  eleventyConfig.addPassthroughCopy({ "src/robots.txt": "/robots.txt" });
 
   eleventyConfig.addFilter("readableDate", function (date) {
     return DateTime.fromJSDate(date).toFormat("d LLLL y");
