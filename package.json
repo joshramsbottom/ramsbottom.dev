@@ -1,26 +1,30 @@
 {
   "name": "ramsbottom.dev",
   "version": "1.0.0",
-  "description": "",
+  "description": "My personal website",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "dev": "eleventy --serve",
     "build": "eleventy"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Joshua Ramsbottom",
+  "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@shopify/prettier-plugin-liquid": "^1.3.0",
-    "husky": "^8.0.3",
-    "lightningcss": "^1.22.0",
-    "lint-staged": "^14.0.1",
-    "luxon": "^3.4.3",
-    "prettier": "^3.0.3"
+    "@11ty/eleventy": "^3.0.0",
+    "@shopify/prettier-plugin-liquid": "^1.6.1",
+    "@types/luxon": "^3.4.2",
+    "browserslist": "^4.24.2",
+    "husky": "^9.1.7",
+    "lightningcss": "^1.28.1",
+    "lint-staged": "^15.2.10",
+    "luxon": "^3.5.0",
+    "prettier": "^3.3.3"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown --plugin=@shopify/prettier-plugin-liquid"
-  }
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "packageManager": "pnpm@9.13.2"
 }
